@@ -29,14 +29,13 @@ Prije nego što pokrenete ovaj projekt, potrebno je da instalirate:
 2. Instalirajte Maven ovisnosti: Otvorite terminal u root direktoriju projekta i pokrenite:
 mvn install
 
-3. Pokrenite testove:
-
-Da biste pokrenuli testove, koristite:
+3. Pokrenite testove: Da biste pokrenuli testove, koristite:
 mvn test
 
 Maven će preuzeti sve potrebne ovisnosti, a TestNG će automatski pokrenuti testove.
 
 4. Struktura Projekta
+   
 polleosport-automation/
 │
 ├── src/
@@ -52,7 +51,9 @@ polleosport-automation/
 
 
 5. Objašnjenje Koda
+   
 PolleoSportTest.java
+
 TestNG Anotacije: Anotacije poput @Test, @BeforeClass, @AfterClass koriste se za definisanje testova, pokretanje setup-a prije testova i čišćenje nakon njih.
 
 Selenium WebDriver: Upotrijebljen za otvaranje web stranica, pronalaženje elemenata pomoću By klasa i interakciju s njima (klik, unos teksta, odabir opcije iz padajućeg menija, itd.).
@@ -60,8 +61,13 @@ Selenium WebDriver: Upotrijebljen za otvaranje web stranica, pronalaženje eleme
 Assertions: TestNG assertTrue i assertEquals metode koriste se za provjeru ispravnosti svake operacije.
 
 6. Testovi:
+   
 Test1: testGoogleSearchAndClickAd: Pretraga za Polleo Sport na Google-u i klik na oglas.
+
 Test2: testDeclineCookiePopupAndVisitHomepage: Odbacivanje kolačića i provjera početne stranice.
+
 Test3: testNavigateToLoginAndRegisterPage: Navigacija prema prijavi i registraciji.
+
 Test4: testAddItemToCartAndSelectOption: Dodavanje proizvoda u košaricu i odabir opcije.
+
 Test5: testSearchAndCompletePurchase: Pretraga, ispunjavanje podataka za narudžbu i završavanje kupovine.
